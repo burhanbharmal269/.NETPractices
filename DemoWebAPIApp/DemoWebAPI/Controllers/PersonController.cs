@@ -1,4 +1,5 @@
 ﻿using DemoWebAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -42,7 +43,7 @@ namespace DemoWebAPI.Controllers
             return person;
         }
 
-        [HttpPost]
+        [HttpPost("Post")]
         public async Task<ActionResult<Person>> Post(Person person)
         {
             _context.Person.Add(person);
@@ -99,6 +100,7 @@ namespace DemoWebAPI.Controllers
             return Ok();
 
         }
+
 
 
     }

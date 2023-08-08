@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\.NETPractice\\DemoWebAPIApp\\DemoWebAPI\\DemoWebAPI.csproj": {}
+    "D:\\.NET Practices\\DemoWebAPIApp\\DemoWebAPI\\DemoWebAPI.csproj": {}
   },
   "projects": {
-    "D:\\.NETPractice\\DemoWebAPIApp\\DemoWebAPI\\DemoWebAPI.csproj": {
+    "D:\\.NET Practices\\DemoWebAPIApp\\DemoWebAPI\\DemoWebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.NETPractice\\DemoWebAPIApp\\DemoWebAPI\\DemoWebAPI.csproj",
+        "projectUniqueName": "D:\\.NET Practices\\DemoWebAPIApp\\DemoWebAPI\\DemoWebAPI.csproj",
         "projectName": "DemoWebAPI",
-        "projectPath": "D:\\.NETPractice\\DemoWebAPIApp\\DemoWebAPI\\DemoWebAPI.csproj",
+        "projectPath": "D:\\.NET Practices\\DemoWebAPIApp\\DemoWebAPI\\DemoWebAPI.csproj",
         "packagesPath": "C:\\Users\\bharm\\.nuget\\packages\\",
-        "outputPath": "D:\\.NETPractice\\DemoWebAPIApp\\DemoWebAPI\\obj\\",
+        "outputPath": "D:\\.NET Practices\\DemoWebAPIApp\\DemoWebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bharm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,6 +41,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.20, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.9, )"
@@ -55,9 +59,17 @@
               "target": "Package",
               "version": "[7.0.9, )"
             },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.32.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.32.1, )"
             }
           },
           "imports": [
